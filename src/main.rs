@@ -65,6 +65,6 @@ fn main() {
         ("reset", Some(_)) => reset(),
         ("register", Some(args)) => register(args),
         ("list", Some(_)) => list(),
-        _ => unreachable!(),
+        _ => println!("Invalid subcommand. Check `help` for more information"),
     }
 }
