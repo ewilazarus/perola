@@ -56,7 +56,7 @@ fn list() {
     repository::list()
         .into_iter()
         .map(|entry| entry.to_string())
-        .for_each(|entry| println!("{}\n\n\n", entry));
+        .for_each(|entry| println!("{}\n\n", entry));
 }
 
 fn main() {

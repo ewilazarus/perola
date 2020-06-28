@@ -26,7 +26,7 @@ impl Perl {
         if segments.len() == 1 {
             return String::from(segments[0]);
         } else {
-            return format!("{0}, {1}", segments[segments.len() - 1], segments[1..].join(" "))
+            return format!("{0}, {1}", segments[segments.len()-1], segments[..segments.len()-1].join(" "))
         }
     }
 }
